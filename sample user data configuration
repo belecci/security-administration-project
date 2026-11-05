@@ -1,0 +1,11 @@
+#!/bin/bash         
+ # Updated to use Amazon Linux 2023
+          dnf update -y
+          dnf install -y httpd wget php-fpm php-mysqli php-json php php-devel
+          dnf install -y mariadb105-server
+          /usr/bin/systemctl enable httpd
+          /usr/bin/systemctl start httpd
+          cd /var/www/html
+          wget https://aws-tc-largeobjects.s3.amazonaws.com/CUR-TF-100-ACCLFO-2/lab5-rds/lab-app-php7.zip
+          unzip lab-app-php7.zip -d /var/www/html/
+          chown -R apache:root /var/www/html

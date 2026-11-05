@@ -1,4 +1,4 @@
-# security-administration-project
+# security-architecture-project
 
 # 🛡️ Secure Cloud Infrastructure & Web Application Deployment
 
